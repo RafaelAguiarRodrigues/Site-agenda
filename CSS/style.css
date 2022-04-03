@@ -1,0 +1,117 @@
+body {
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    background-image: linear-gradient(to right, white, purple);
+}
+
+.cabecalho {
+    font-weight: bold;
+    color: white;
+    padding: 1em 0 1em 3em;
+    font-size: 34px;
+    text-shadow: 0.1em 0.1em 0.1em black;
+    border-bottom: white solid 1px;
+    background-color: gray;
+}
+
+main {
+    width: 60%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.primeiro-titulo {
+    font-weight: 550;
+    font-size: 25px;
+    display: block;
+    border-bottom: 1px solid white;
+    margin-right: 70%;
+    padding: 1em 0 0.5em;
+}
+
+.texto-ensino {
+    font-style: italic;
+    margin-top: 0.5em;
+}
+
+.pesquisar {
+    color: #555;
+    font-size: 14px;
+    display: block;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+}
+
+.filtro-tabela {
+    border: 1px solid #ccc;
+    padding: .7em;
+    border-radius: 11px;
+}
+
+table {
+    width: 100%;
+    margin-bottom: 0.5em;
+    margin-top: 0.5em;
+    table-layout: fixed;
+}
+
+td, th {
+    padding: .7em;
+    border: 1px solid black;
+    text-align: center;
+    background: white;
+}
+
+th {
+    font-weight: bold;
+    background-color: #EEE;
+    background-color: rgb(194, 4, 194);
+    color: white;
+}
+
+label{
+	color: #555;
+	display: block;
+	margin-bottom: .2em;
+    margin-top: 1em;
+
+}
+
+.campo{
+	padding-bottom: 1em;
+	width: 100%;
+	border: 1px solid #ccc;
+	padding: .7em;
+	width: 100%;
+    border-radius: 11px;
+}
+
+.botao-principal {
+    margin-top: 1em;
+    background-color: purple;
+    padding: 15px;
+    border: 1px solid black;
+    display: inline-block;
+    border-radius: 10px;
+    font-weight: bold;
+    color: white;
+}
+
+.botao-principal:hover {
+    font-size: 20px;
+    transition: 0.5s;
+    background-color: rgb(194, 4, 194);
+}
+
+.contato-invalido {
+    background-color: lightcoral;
+}
+
+#mensagens-erro {
+    color: red;
+    padding: 1em 0 0 0;
+}
+
+.invisivel {
+    display: none;
+}
