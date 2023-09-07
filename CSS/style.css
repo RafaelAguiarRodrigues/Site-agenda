@@ -1,30 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap');
+
+:root {
+    /* fontes */
+    --fonte-principal: 'Raleway', sans-serif;
+
+    /* cores */
+    --preto: #000000;
+    --branco: #FFFFFF;
+    --cinza: #CCCCCC;
+}
+
 body {
-    font-family: 'Raleway', sans-serif;
+    font-family: var(--fonte-principal);
     font-size: 16px;
     background-image: linear-gradient(to right, white, purple);
 }
 
-.cabecalho {
-    font-weight: bold;
+.cabecalho__titulo {
     color: white;
-    padding: 1em 0 1em 3em;
-    font-size: 34px;
-    text-shadow: 0.1em 0.1em 0.1em black;
-    border-bottom: white solid 1px;
+    border-bottom: solid 1px var(--branco);
     background-color: gray;
+    font-weight: bold;
+    font-size: 34px;
+    padding: 1em 0 1em 3em;
+    text-shadow: 0.1em 0.1em 0.1em var(--preto);
 }
 
-main {
-    width: 60%;
+.principal {
     height: 100%;
     margin: 0 auto;
+    width: 60%;
 }
 
 .primeiro-titulo {
+    border-bottom: 1px solid var(--branco);
+    display: block;
     font-weight: 550;
     font-size: 25px;
-    display: block;
-    border-bottom: 1px solid white;
     margin-right: 70%;
     padding: 1em 0 0.5em;
 }
@@ -34,7 +46,7 @@ main {
     margin-top: 0.5em;
 }
 
-.pesquisar {
+.pesquisarCampo {
     color: #555;
     font-size: 14px;
     display: block;
@@ -43,33 +55,32 @@ main {
 }
 
 .filtro-tabela {
-    border: 1px solid #ccc;
+    border: 1px solid var(--branco);
     padding: .7em;
     border-radius: 11px;
 }
 
-table {
-    width: 100%;
+.tabela {
     margin-bottom: 0.5em;
     margin-top: 0.5em;
     table-layout: fixed;
+    width: 100%;
 }
 
-td, th {
+.tabela td, th {
+    background: var(--branco);
+    border: 1px solid var(--preto);
     padding: .7em;
-    border: 1px solid black;
     text-align: center;
-    background: white;
 }
 
-th {
-    font-weight: bold;
-    background-color: #EEE;
+.tabela th {
+    color: var(--branco);
     background-color: rgb(194, 4, 194);
-    color: white;
+    font-weight: bold;
 }
 
-label{
+#form-adicionar label{
 	color: #555;
 	display: block;
 	margin-bottom: .2em;
@@ -78,12 +89,16 @@ label{
 }
 
 .campo{
+    border: 1px solid #ccc;
+    border-radius: 11px;
+	padding: .7em;
 	padding-bottom: 1em;
 	width: 100%;
-	border: 1px solid #ccc;
-	padding: .7em;
-	width: 100%;
-    border-radius: 11px;
+}
+
+.campo:focus, .filtro-tabela:focus {
+    box-shadow: 2px 2px 2px 2px rgb(148, 181, 184);
+    outline: 0;
 }
 
 .botao-principal {
@@ -98,8 +113,9 @@ label{
 }
 
 .botao-principal:hover {
+    cursor: pointer;
     font-size: 20px;
-    transition: 0.5s;
+    transition: 0.5s ease;
     background-color: rgb(194, 4, 194);
 }
 

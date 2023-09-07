@@ -3,33 +3,33 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Meu primeiro site com Javascript, um site de agenda!">
     <title>Cei Telefones</title>
-    <link rel="shortcut icon" href="codigo.png">
+    <!-- <link rel="shortcut icon" href="codigo.png"> -->
     <link rel="stylesheet" href="CSS\reset.css">
     <link rel="stylesheet" href="CSS\style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
-
 </head>
-<header>
-    <h1 class="cabecalho">Cei Telefones</h1>
-</header>
 
 <body>
-    <main>
+    <header class="cabecalho">
+        <h1 class="cabecalho__titulo">Cei Telefones</h1>
+    </header>
+    <main class="principal">
         <h2 class="primeiro-titulo">Meus Contatos:</h2>
         <p class="texto-ensino">Para adicionar contatos basta preencher abaixo, caso deseja remover algum dê um duplo
             click.</p>
-        <label for="filtro-tabela" class="pesquisar">Pesquisar :</label>
+        <label for="filtro-tabela" class="pesquisarCampo">Pesquisar :</label>
         <input type="text" name="filtro-tabela" placeholder="Digite o nome do contato" class="filtro-tabela">
-        <table>
+        <table class="tabela">
             <thead>
                 <tr>
                     <th>Nome</th>
                     <th>Número</th>
                 </tr>
             </thead>
-            <tbody id="tabela-contatos">
+            <tbody id="tabelaContato__corpo">
                 <tr class="contato">
                     <td class="info-nome">Exemplo</td>
                     <td class="info-numero">+00 (00) 0000-0000</td>
@@ -53,10 +53,11 @@
 
                 <button id="adiciona-contato" class="botao-principal">Adicionar</button>
             </form>
-
         </section>
-
     </main>
+    <footer>
+
+    </footer>
     <script src="js/form.js"></script>
     <script src="js/valida.js"></script>
     <script src="js/remove-contatos.js"></script>
