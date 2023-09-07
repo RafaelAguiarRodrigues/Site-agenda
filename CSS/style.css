@@ -8,18 +8,22 @@
     --preto: #000000;
     --branco: #FFFFFF;
     --cinza: #CCCCCC;
+    --roxo: #80006b;
 }
 
 body {
     font-family: var(--fonte-principal);
     font-size: 16px;
-    background-image: linear-gradient(to right, white, purple);
+    background-image: linear-gradient(to right, var(--branco), purple);
+}
+
+.cabecalho {
+    background-color: var(--roxo);
 }
 
 .cabecalho__titulo {
-    color: white;
+    color: var(--cinza);
     border-bottom: solid 1px var(--branco);
-    background-color: gray;
     font-weight: bold;
     font-size: 34px;
     padding: 1em 0 1em 3em;
@@ -27,7 +31,7 @@ body {
 }
 
 .principal {
-    height: 100%;
+    min-height: 100vh;
     margin: 0 auto;
     width: 60%;
 }
@@ -76,8 +80,12 @@ body {
 
 .tabela th {
     color: var(--branco);
-    background-color: rgb(194, 4, 194);
+    background-color: var(--roxo);
     font-weight: bold;
+}
+
+#form-adicionar {
+    margin-bottom: 5em;
 }
 
 #form-adicionar label{
@@ -89,7 +97,7 @@ body {
 }
 
 .campo{
-    border: 1px solid #ccc;
+    border: 1px solid var(--branco);
     border-radius: 11px;
 	padding: .7em;
 	padding-bottom: 1em;
@@ -103,7 +111,7 @@ body {
 
 .botao-principal {
     margin-top: 1em;
-    background-color: purple;
+    background-color: var(--roxo);
     padding: 15px;
     border: 1px solid black;
     display: inline-block;
@@ -117,6 +125,20 @@ body {
     font-size: 20px;
     transition: 0.5s ease;
     background-color: rgb(194, 4, 194);
+}
+
+.rodape {
+    align-items: center;
+    background-color: var(--roxo);
+    display: flex;
+    justify-content: center;
+    height: 15vh;
+}
+
+.rodape__texto {
+    color: var(--cinza);
+    font-style: italic;
+    text-align: center;
 }
 
 .contato-invalido {

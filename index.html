@@ -13,9 +13,11 @@
 </head>
 
 <body>
+    <!-- Cabeçalho da página -->
     <header class="cabecalho">
         <h1 class="cabecalho__titulo">Cei Telefones</h1>
     </header>
+    <!-- Conteúdo principal -->
     <main class="principal">
         <h2 class="primeiro-titulo">Meus Contatos:</h2>
         <p class="texto-ensino">Para adicionar contatos basta preencher abaixo, caso deseja remover algum dê um duplo
@@ -39,6 +41,7 @@
         <span id="erro-ajax" class="invisivel">Erro ao buscar os contatos</span>
         <section>
             <h2 class="primeiro-titulo">Adicionar Novo Contato</h2>
+            <!-- Lista de mensagens de erro -->
             <ul id="mensagens-erro">
                 <li></li>
                 <li></li>
@@ -49,14 +52,15 @@
                     class="campo">
 
                 <label for="nome">Número:</label>
-                <input id="numero" name="numero" type="tel" placeholder="+xx (xx) xxxxx-xxxx" class="campo">
+                <input id="numero" name="numero" type="tel" placeholder="+xx (xx) xxxxx-xxxx" class="campo" maxlength="30">
 
                 <button id="adiciona-contato" class="botao-principal">Adicionar</button>
             </form>
         </section>
     </main>
-    <footer>
-
+    <!-- Rodapé da página -->
+    <footer class="rodape">
+        <p class="rodape__texto">Made by Rafael Aguiar Rodrigues</p>
     </footer>
     <script src="js/form.js"></script>
     <script src="js/valida.js"></script>

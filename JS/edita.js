@@ -4,4 +4,6 @@ var nome = tdNome.textContent;
 var tdNumero = contato.querySelector(".info-numero");
 var numero = tdNumero.textContent;
 
-tdNome.addEventListener("click", )
+// tdNome.addEventListener("dblclick", function () {
+    
+// })
